@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://charleschang.io/2019/02/12/Nmap-Vulners-Scanner/</loc>
+    
+    <lastmod>2019-02-12T14:46:47.620Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://charleschang.io/tags/index.html</loc>
     
     <lastmod>2019-02-07T01:21:26.309Z</lastmod>

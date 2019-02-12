@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Nmap-Vulners Scanner</title>
+      <link href="/2019/02/12/Nmap-Vulners-Scanner/"/>
+      <url>/2019/02/12/Nmap-Vulners-Scanner/</url>
+      
+        <content type="html"><![CDATA[<h1 id="懶人包安裝（只有Kali）"><a href="#懶人包安裝（只有Kali）" class="headerlink" title="懶人包安裝（只有Kali）!!"></a>懶人包安裝（只有Kali）!!</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl https://gist.githubusercontent.com/epson12332/e19751b9fb4637e0f4bb6e2a1adb4f54/raw/4ea10214d34513a918525f34a01dbcbdf4d2f3ff/gistfile1.txt | sudo sh</span><br></pre></td></tr></table></figure><ol><li>Install Nmap-Vulners</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/share/nmap/scripts/</span><br><span class="line">git clone https://github.com/vulnersCom/nmap-vulners.git</span><br></pre></td></tr></table></figure><ol start="2"><li>Install Vulscan</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/scipag/vulscan.git</span><br><span class="line">ls vulscan/*.csv</span><br><span class="line">cd vulscan/utilities/updater/</span><br><span class="line">chmod +x updateFiles.sh</span><br><span class="line">./updateFiles.sh</span><br></pre></td></tr></table></figure><ol start="3"><li>安裝的弱點對照資料庫</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">vulscan/cve.csv        vulscan/scipvuldb.csv</span><br><span class="line">vulscan/exploitdb.csv  vulscan/securityfocus.csv</span><br><span class="line">vulscan/openvas.csv    vulscan/securitytracker.csv</span><br><span class="line">vulscan/osvdb.csv      vulscan/xforce.csv</span><br></pre></td></tr></table></figure><p>掃描語法</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap --script nmap-vulners,vulscan --script-args vulscandb=exploitdb.csv -sV &lt;target IP&gt;</span><br></pre></td></tr></table></figure><h4 id="只要更改vulscandb後的資料來源及ip位置即可，要有poc的選exploitdb-這樣就可以找到相對應的漏洞"><a href="#只要更改vulscandb後的資料來源及ip位置即可，要有poc的選exploitdb-這樣就可以找到相對應的漏洞" class="headerlink" title="只要更改vulscandb後的資料來源及ip位置即可，要有poc的選exploitdb!!這樣就可以找到相對應的漏洞"></a>只要更改vulscandb後的資料來源及ip位置即可，要有poc的選exploitdb!!這樣就可以找到相對應的漏洞</h4>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> P.T Tools </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>test</title>
       <link href="/2019/02/07/test/"/>
       <url>/2019/02/07/test/</url>
