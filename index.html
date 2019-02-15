@@ -387,7 +387,7 @@
 <h2 id="語法"><a href="#語法" class="headerlink" title="語法"></a>語法</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -F 'data=@path/to/local/file' UPLOAD_ADDRESS</span><br></pre></td></tr></table></figure>
 <p>舉例我要上傳到/cyc/hello.txt到<a href="http://localhost/uploads" target="_blank" rel="noopener">http://localhost/uploads</a> 這個網頁裡面做檔案處理的參數img_avatar</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -F 'img_avatar=/cyc/hello.txt' http://localhost/uploads</span><br></pre></td></tr></table></figure>
-
+<h2 id="其他的語法"><a href="#其他的語法" class="headerlink" title="其他的語法"></a>其他的語法</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl -X PUT -T "/path/to/file" "http://myputserver.com/puturl.tmp"</span><br><span class="line">curl  --upload-file filename http://dummy.com/upload</span><br></pre></td></tr></table></figure>
           
         
       

@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="CYC">
 <meta property="og:description" content="用curl上傳檔案有時候用 -X POST 會導致錯誤正確的方式要用-F(–form) , 他在request的時候會加入enctype=”multipart/form-data” 語法1curl -F &apos;data=@path/to/local/file&apos; UPLOAD_ADDRESS 舉例我要上傳到/cyc/hello.txt到http://localhost/uploads 這個網頁裡面做檔案">
 <meta property="og:locale" content="zh-tw">
-<meta property="og:updated_time" content="2019-02-15T07:33:03.806Z">
+<meta property="og:updated_time" content="2019-02-15T07:40:44.749Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="用curl上傳檔案">
 <meta name="twitter:description" content="用curl上傳檔案有時候用 -X POST 會導致錯誤正確的方式要用-F(–form) , 他在request的時候會加入enctype=”multipart/form-data” 語法1curl -F &apos;data=@path/to/local/file&apos; UPLOAD_ADDRESS 舉例我要上傳到/cyc/hello.txt到http://localhost/uploads 這個網頁裡面做檔案">
@@ -387,7 +387,7 @@
 <h2 id="語法"><a href="#語法" class="headerlink" title="語法"></a>語法</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -F 'data=@path/to/local/file' UPLOAD_ADDRESS</span><br></pre></td></tr></table></figure>
 <p>舉例我要上傳到/cyc/hello.txt到<a href="http://localhost/uploads" target="_blank" rel="noopener">http://localhost/uploads</a> 這個網頁裡面做檔案處理的參數img_avatar</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -F 'img_avatar=/cyc/hello.txt' http://localhost/uploads</span><br></pre></td></tr></table></figure>
-
+<h2 id="其他的語法"><a href="#其他的語法" class="headerlink" title="其他的語法"></a>其他的語法</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl -X PUT -T "/path/to/file" "http://myputserver.com/puturl.tmp"</span><br><span class="line">curl  --upload-file filename http://dummy.com/upload</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -582,7 +582,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#用curl上傳檔案"><span class="nav-number">1.</span> <span class="nav-text">用curl上傳檔案</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#語法"><span class="nav-number">1.1.</span> <span class="nav-text">語法</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#用curl上傳檔案"><span class="nav-number">1.</span> <span class="nav-text">用curl上傳檔案</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#語法"><span class="nav-number">1.1.</span> <span class="nav-text">語法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他的語法"><span class="nav-number">1.2.</span> <span class="nav-text">其他的語法</span></a></li></ol></li></ol></div>
             
 
           </div>
