@@ -70,7 +70,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="CMD,">
 
 
 
@@ -81,17 +81,18 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="用curl上傳檔案有時候用 -X POST 會導致錯誤正確的方式要用-F(–form) , 他在request的時候會加入enctype=”multipart/form-data” 語法1curl -F &apos;data=@path/to/local/file&apos; UPLOAD_ADDRESS 舉例我要上傳到/cyc/hello.txt到http://localhost/uploads 這個網頁裡面做檔案">
+<meta name="keywords" content="CMD">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://charleschang.io/2019/02/07/hello-world/index.html">
+<meta property="og:title" content="用curl上傳檔案">
+<meta property="og:url" content="https://charleschang.io/2019/02/15/用curl上傳檔案/index.html">
 <meta property="og:site_name" content="CYC">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="用curl上傳檔案有時候用 -X POST 會導致錯誤正確的方式要用-F(–form) , 他在request的時候會加入enctype=”multipart/form-data” 語法1curl -F &apos;data=@path/to/local/file&apos; UPLOAD_ADDRESS 舉例我要上傳到/cyc/hello.txt到http://localhost/uploads 這個網頁裡面做檔案">
 <meta property="og:locale" content="zh-tw">
-<meta property="og:updated_time" content="2019-02-07T00:55:07.884Z">
+<meta property="og:updated_time" content="2019-02-15T07:32:01.871Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="用curl上傳檔案">
+<meta name="twitter:description" content="用curl上傳檔案有時候用 -X POST 會導致錯誤正確的方式要用-F(–form) , 他在request的時候會加入enctype=”multipart/form-data” 語法1curl -F &apos;data=@path/to/local/file&apos; UPLOAD_ADDRESS 舉例我要上傳到/cyc/hello.txt到http://localhost/uploads 這個網頁裡面做檔案">
 
 
 
@@ -121,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="https://charleschang.io/2019/02/07/hello-world/">
+  <link rel="canonical" href="https://charleschang.io/2019/02/15/用curl上傳檔案/">
 
 
 
 
 
-  <title>Hello World | CYC</title>
+  <title>用curl上傳檔案 | CYC</title>
   
 
 
@@ -305,7 +306,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://charleschang.io/2019/02/07/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://charleschang.io/2019/02/15/用curl上傳檔案/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Charles Chang">
@@ -322,7 +323,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">用curl上傳檔案</h1>
         
 
         <div class="post-meta">
@@ -334,8 +335,8 @@
               
                 <span class="post-meta-item-text">發表於</span>
               
-              <time title="創建於" itemprop="dateCreated datePublished" datetime="2019-02-07T08:55:07+08:00">
-                2019-02-07
+              <time title="創建於" itemprop="dateCreated datePublished" datetime="2019-02-15T15:24:37+08:00">
+                2019-02-15
               </time>
             
 
@@ -353,8 +354,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/02/07/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/02/07/hello-world/" itemprop="commentCount"></span>
+                <a href="/2019/02/15/用curl上傳檔案/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/02/15/用curl上傳檔案/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -382,15 +383,10 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h1 id="用curl上傳檔案"><a href="#用curl上傳檔案" class="headerlink" title="用curl上傳檔案"></a>用curl上傳檔案</h1><p>有時候用 <strong>-X POST</strong> 會導致錯誤<br>正確的方式要用<strong>-F(–form)</strong> , 他在request的時候會加入<strong>enctype=”multipart/form-data”</strong></p>
+<h2 id="語法"><a href="#語法" class="headerlink" title="語法"></a>語法</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -F 'data=@path/to/local/file' UPLOAD_ADDRESS</span><br></pre></td></tr></table></figure>
+<p>舉例我要上傳到/cyc/hello.txt到<a href="http://localhost/uploads" target="_blank" rel="noopener">http://localhost/uploads</a> 這個網頁裡面做檔案處理的參數img_avatar</p>
+<p><code>`</code>shell=zsh<br>curl -F ‘img_avatar=/cyc/hello.txt’ <a href="http://localhost/uploads" target="_blank" rel="noopener">http://localhost/uploads</a></p>
 
       
     </div>
@@ -406,6 +402,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/CMD/" rel="tag"># CMD</a>
+          
+        </div>
+      
 
       
       
@@ -415,15 +417,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/02/12/Nmap-Vulners-Scanner/" rel="next" title="Nmap-Vulners Scanner">
+                <i class="fa fa-chevron-left"></i> Nmap-Vulners Scanner
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/02/07/test/" rel="prev" title="test">
-                test <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -580,7 +582,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#用curl上傳檔案"><span class="nav-number">1.</span> <span class="nav-text">用curl上傳檔案</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#語法"><span class="nav-number">1.1.</span> <span class="nav-text">語法</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -757,9 +759,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'https://charleschang.io/2019/02/07/hello-world/';
-          this.page.identifier = '2019/02/07/hello-world/';
-          this.page.title = 'Hello World';
+          this.page.url = 'https://charleschang.io/2019/02/15/用curl上傳檔案/';
+          this.page.identifier = '2019/02/15/用curl上傳檔案/';
+          this.page.title = '用curl上傳檔案';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://charleschang.disqus.com/embed.js';
