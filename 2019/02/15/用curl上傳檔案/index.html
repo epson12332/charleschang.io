@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="CYC">
 <meta property="og:description" content="用curl上傳檔案有時候用 -X POST 會導致錯誤正確的方式要用-F(–form) , 他在request的時候會加入enctype=”multipart/form-data” 語法1curl -F &apos;data=@path/to/local/file&apos; UPLOAD_ADDRESS 舉例我要上傳到/cyc/hello.txt到http://localhost/uploads 這個網頁裡面做檔案">
 <meta property="og:locale" content="zh-tw">
-<meta property="og:updated_time" content="2019-02-15T07:32:01.871Z">
+<meta property="og:updated_time" content="2019-02-15T07:33:03.806Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="用curl上傳檔案">
 <meta name="twitter:description" content="用curl上傳檔案有時候用 -X POST 會導致錯誤正確的方式要用-F(–form) , 他在request的時候會加入enctype=”multipart/form-data” 語法1curl -F &apos;data=@path/to/local/file&apos; UPLOAD_ADDRESS 舉例我要上傳到/cyc/hello.txt到http://localhost/uploads 這個網頁裡面做檔案">
@@ -386,7 +386,7 @@
         <h1 id="用curl上傳檔案"><a href="#用curl上傳檔案" class="headerlink" title="用curl上傳檔案"></a>用curl上傳檔案</h1><p>有時候用 <strong>-X POST</strong> 會導致錯誤<br>正確的方式要用<strong>-F(–form)</strong> , 他在request的時候會加入<strong>enctype=”multipart/form-data”</strong></p>
 <h2 id="語法"><a href="#語法" class="headerlink" title="語法"></a>語法</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -F 'data=@path/to/local/file' UPLOAD_ADDRESS</span><br></pre></td></tr></table></figure>
 <p>舉例我要上傳到/cyc/hello.txt到<a href="http://localhost/uploads" target="_blank" rel="noopener">http://localhost/uploads</a> 這個網頁裡面做檔案處理的參數img_avatar</p>
-<p><code>`</code>shell=zsh<br>curl -F ‘img_avatar=/cyc/hello.txt’ <a href="http://localhost/uploads" target="_blank" rel="noopener">http://localhost/uploads</a></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -F 'img_avatar=/cyc/hello.txt' http://localhost/uploads</span><br></pre></td></tr></table></figure>
 
       
     </div>
